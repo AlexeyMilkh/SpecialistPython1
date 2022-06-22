@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+
+n = int(input("N:"))
+
+if 0 < n//100 < 10:
+    print("Yes")
+else:
+    print("No")
 ```
 
 ---
