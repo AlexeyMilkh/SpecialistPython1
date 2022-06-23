@@ -22,4 +22,19 @@ a = int(input("a: "))
 b = int(input("b: "))
 
 # TODO: you code here...
-```
+
+a = int(input("a: "))
+b = int(input("b: "))
+count = 0
+
+while a <= b:
+    if a % 5 == 0:
+        print("a =", a)
+    a += 1
+    count += 1
+
+while b <= a:
+    if b % 5 == 0:
+        print("b =", b)
+    b += 1
+    count += 1
