@@ -3,4 +3,9 @@
 
 my_list = [24, "Василий", "выхухоль", 42, -12.5]
 
-# TODO: your code here
+trash = [24, "Василий", "выхухоль", 42, -12.5]
+i = 0
+element = trash[i]
+
+for element in trash:
+    print(element)
