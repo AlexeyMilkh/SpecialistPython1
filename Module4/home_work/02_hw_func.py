@@ -6,7 +6,24 @@
 
 def distance(x1, y1, x2, y2):
     # TODO: тело, которое вы реализовали на практической работе
-    pass
+    
+def distance(x1, y1, x2, y2):
+    if y2 - y1 + x2 - x1 < y3 - y2 + x3 - x2 and y2 - y1 + x2 - x1 < y3 - y1 + x3 - x1:
+        return "Самый короткий отрезок: AB"
+    elif y3 - y2 + x3 - x2 < y3 - y1 + x3 - x1:
+        return "Самый короткий отрезок: BC"
+    else:
+        return "Самый короткий отрезок: AC"
+
+
+x1 = int(input("X1:"))
+y1 = int(input("Y1:"))
+x2 = int(input("X2:"))
+y2 = int(input("Y2:"))
+x3 = int(input("X3:"))
+y3 = int(input("Y3:"))
+
+print(distance(x1, y1, x2, y2))
 
 
 # TODO: your code here
