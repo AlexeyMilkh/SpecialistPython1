@@ -4,7 +4,27 @@
 
 def lucky_ticket(ticket_number):
     # TODO: your code here
-    pass
+    
+def lucky_ticket(ticket_number):
+    if len(str(ticket_number)) // 3 == 2:
+        sum_left = 0
+        sum_right = 0
+        for i in range(6):
+            if i < 3:
+                sum_right += ticket_number // 10 ** i % 10
+            else:
+                sum_left += ticket_number // 10 ** i % 10
+        if sum_left == sum_right:
+            return "Счастливый билет"
+        else:
+            return "Обычный билет"
+    else:
+        return "Обычный билет"
+
+
+ticket_number = int(input("Ticket number:"))
+
+print(lucky_ticket(ticket_number))
 
 
 # Тестируем функцию
