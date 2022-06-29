@@ -16,6 +16,22 @@
 
 ### Решение задачи
 
+path = "data/numbers.txt"
+f = open(path, "r")
+
+sum_numbers = 0
+count = 0
+arithmetic_mean = 0
+
+for line in f:
+    line = int(line)
+    sum_numbers += line
+    count += 1
+arithmetic_mean = sum_numbers/count
+
+print(f"Сумма чисел = {sum_numbers}")
+print(f"Среднеарифметическое = {arithmetic_mean}")
+
 ```python
 # Задаем путь к файлу:
 path = "dir/numbers.txt"  # вместо dir подставь название папки с файлом.
