@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-def log(text, file="log.txt"):
+def log(text, file):
+    f = open(file, "a", encoding="UTF-8")
+    text = f.write("\n" + text)
+    f.close()
+
+
+log("hello world", file="Data/log01.txt")
     ...
 
 log("hello world")  # дописывает "hello world" в конец файла log.txt
